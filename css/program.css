@@ -17,8 +17,28 @@ body {
     justify-content: center;
     align-items: center;
     gap: 9px;
+    margin: 0;
+    font-family: monospace;
+    
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
 
+    .container {
+        padding: 10px; /* Add padding for mobile */
+    }
+
+    .cube {
+        width: 100%; /* Make the cube responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+button {
+    padding: 10px 20px; /* Increase padding for touch targets */
+    font-size: 16px; /* Ensure text is readable */
+}
 .title {
     color: rgb(238, 255, 255);
     text-align: center;
